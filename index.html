@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-store">
+        <title>Peluquería | Hair Care &#38; Beauty - Peluquería Handsome en Madrid</title>
+        <meta name="description" content="Peluquería de confianza en Móstoles en Madrid de España. Expertos en técnicas de color. Pide cita online o por teléfono: +34 912 97 60 63">
+        <meta name="keywords" content="Peluqueria para mujeres, Peluqueria femenina, Peinado, Salon de belleza, Pelo, Cabello, Corte de pelo, Estilista, Look, Moda, Tintes, Mechas, Alisado, España, Madrid, Tratamientos capilares">
+        <link rel="icon" type="image/webp" href="Logo_icon_webp.webp">
+        <link rel="icon" type="image/png" href="Logo_icon.jpg">
+        <style>
+            * {margin: 0; padding: 0;}
+
+            header {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                box-shadow: 5px 5px 10px 0 #00000080;
+                margin-bottom: 20px;
+            }
+
+            header img {
+                width: clamp(50px, 10vw, 100px);
+                height: auto;
+            }
+            
+            h2 {
+                font-size: clamp(16px, 4vw, 24px);
+            }
+
+            a {
+                color: #4e4e4e;
+                text-decoration: none;
+                font-size: clamp(16px, 3vw, 1.4rem);
+                margin: 15px  10px 0px 0px
+            }
+
+            button {
+                border: none;
+                background: none;
+                cursor: pointer;
+            }
+
+            section {
+                height: 400px;
+                margin-bottom: 10px;
+            }
+
+            section img {
+                max-height: 100%; 
+                width: 86%; 
+                height: auto;
+            }
+
+            article {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: clamp(11px, 3vw, 30px);
+                background-color: #ff6a87;
+                width: 50%;
+            }
+
+            @media only screen and (max-width: 995px) {
+                nav {
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: -300px;
+                    box-shadow: 5px 5px 10px 0 #00000080;
+                    text-align: center;
+                    transition:left 1s ease
+                }
+                
+                a {
+                    display: block;
+                    border-bottom: 1px solid black;
+                    width: 100%;
+                }
+
+                a:last-child {
+                    border-bottom: none;
+                }
+
+                #Menu-icon {
+                    margin-top: clamp(5px, 4vh, 2px); 
+                    width: clamp(16px, 4vw, 30px);
+                }
+
+                #Close-icon {
+                    width: 17.5px;
+                    margin-left: 150px;
+                }
+
+                section {
+                    height: auto;
+                }
+            }
+
+            @media (min-width: 996px) {
+                picture:last-child {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <picture id="Logo">
+                <source type="image/jpg" srcset="Logo.jpg">
+                <img type="image/webp" src="Logo_webp.webp" height="100px" alt="Logo">
+            </picture>
+
+            <h2>Peluquer&iacute;a Handsome</h2>
+            
+            <nav>
+                <button>
+                    <picture>
+                        <source type="image/png" srcset="close_icon.png">
+                        <img id="Close-icon" type="image/webp" src="close_icon_webp.webp" alt="Cerrar menu">
+                    </picture>
+                </button>
+                <a href="">Inicio</a>
+                <a href="">Nosotras</a>
+                <a href="">Servicios</a>
+                <a href="">Reservas</a>
+                <a href="">Trabaja con nosotras</a>
+                <a href="">Contacto</a>
+            </nav>
+
+            <button>
+                <picture>
+                    <source type="image/jpg" srcset="Menu icon.png">
+                    <img id="Menu-icon" type="image/webp" src="Menu_icon_webp.webp" alt="Abrir menu">
+                </picture>
+            </button>
+        </header>
+        
+        <main>
+            <center>
+                <section >
+                    <img src="Se rubia en una sesion.png">
+                </section>
+
+                <article>
+                    <img src="Phone icon.png" style="margin-bottom: 6px; height: 30px;">
+                    <a href="tel:+34912976063" style="margin: 10px 0px 10px 15px; color: white;">RESERVA AQU&Iacute; +34 912 97 60 63</a>
+                </article>
+            </center>
+        </main>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var menu = document.getElementById("Menu-icon");
+                var closeButton = document.getElementById("Close-icon");
+                var nav = document.querySelector('nav');
+
+                menu.addEventListener('click', function() {
+                    nav.style.left = '0';
+
+                closeButton.addEventListener('click', function() {
+                    nav.style.left = '-300px'
+                })
+                });
+            });
+        </script>
+    </body>
+</html>
